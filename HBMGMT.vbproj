@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB6D9793-B7F1-41C8-BF2E-BF481659856F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApp1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApp1</RootNamespace>
+    <AssemblyName>XBM-x1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>XBM-x1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>XBM-x1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>XBMLOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>XBM-x1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>XBM-x1.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ADODB, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.StdFormat, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility.Data" />
+    <Reference Include="MSDATASRC, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addstock.Designer.vb">
+      <DependentUpon>addstock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="addstock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="basicinfoadd.Designer.vb">
+      <DependentUpon>basicinfoadd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="basicinfoadd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CUSTOMER.Designer.vb">
+      <DependentUpon>CUSTOMER.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CUSTOMER.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dialoqwelcome.Designer.vb">
+      <DependentUpon>dialoqwelcome.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="dialoqwelcome.vb">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="donations.Designer.vb">
+      <DependentUpon>donations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="donations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donations_add.Designer.vb">
+      <DependentUpon>donations_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="donations_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donations_report.Designer.vb">
+      <DependentUpon>donations_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="donations_report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOY.Designer.vb">
+      <DependentUpon>EMPLOY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invoice.Designer.vb">
+      <DependentUpon>invoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="invoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainscreen.Designer.vb">
+      <DependentUpon>mainscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="password.Designer.vb">
+      <DependentUpon>password.vb</DependentUpon>
+    </Compile>
+    <Compile Include="password.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passwordwindow.Designer.vb">
+      <DependentUpon>passwordwindow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="passwordwindow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>productDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="REFUND.Designer.vb">
+      <DependentUpon>REFUND.vb</DependentUpon>
+    </Compile>
+    <Compile Include="REFUND.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.vb">
+      <DependentUpon>report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="report.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings1.settings</DependentUpon>
+    </Compile>
+    <Compile Include="stockmgmt.Designer.vb">
+      <DependentUpon>stockmgmt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stockmgmt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControl1.xaml.vb">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.Designer.vb">
+      <DependentUpon>UserControl2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="welcomescreen.Designer.vb">
+      <DependentUpon>welcomescreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="welcomescreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addstock.resx">
+      <DependentUpon>addstock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="basicinfoadd.resx">
+      <DependentUpon>basicinfoadd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CUSTOMER.resx">
+      <DependentUpon>CUSTOMER.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dialoqwelcome.resx">
+      <DependentUpon>dialoqwelcome.vb</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donations.resx">
+      <DependentUpon>donations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donations_add.resx">
+      <DependentUpon>donations_add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donations_report.resx">
+      <DependentUpon>donations_report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOY.resx">
+      <DependentUpon>EMPLOY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invoice.resx">
+      <DependentUpon>invoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainscreen.resx">
+      <DependentUpon>mainscreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="password.resx">
+      <DependentUpon>password.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passwordwindow.resx">
+      <DependentUpon>passwordwindow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REFUND.resx">
+      <DependentUpon>REFUND.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stockmgmt.resx">
+      <DependentUpon>stockmgmt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl2.resx">
+      <DependentUpon>UserControl2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcomescreen.resx">
+      <DependentUpon>welcomescreen.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="productDataSet.xsc">
+      <DependentUpon>productDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="productDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>productDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="productDataSet.xss">
+      <DependentUpon>productDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Settings1.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO.ico" />
+    <Content Include="product.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XBMLOGO.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
